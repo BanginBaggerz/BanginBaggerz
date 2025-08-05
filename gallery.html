@@ -1,0 +1,10 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Gallery - Bangin Baggerz</title><link rel="stylesheet" href="styles.css"/>
+<style>.slider-container{max-width:800px;margin:40px auto;position:relative;overflow:hidden;border:5px solid #e3a129;}
+.slides img{width:100%;display:none;}.slides img.active{display:block;}</style></head><body><header><div class="logo"><a href="index.html">
+<img src="logo.jpeg" alt="Bangin Baggerz Logo"></a></div><nav><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li>
+<li><a href="services.html">Services</a></li><li><a href="gallery.html" class="active">Gallery</a></li><li><a href="contact.html">Contact Us</a></li></ul></nav></header>
+<main class="page-content"><h1>Gallery</h1><div class="slider-container"><div class="slides"><img src="gallery1.jpg" alt="Baggers Build 1" class="active">
+<img src="gallery2.jpg" alt="Baggers Build 2"><img src="gallery3.jpg" alt="Baggers Build 3"></div></div></main>
+<footer><p>&copy; 2025 Bangin Baggerz. All rights reserved.</p></footer>
+<script>const slides=document.querySelectorAll('.slides img');let current=0;setInterval(()=>{slides[current].classList.remove('active');current=(current+1)%slides.length;slides[current].classList.add('active');},3000);</script></body></html>
